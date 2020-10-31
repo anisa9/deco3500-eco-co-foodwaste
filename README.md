@@ -14,7 +14,7 @@ Links for the prototypes developed can be accessed on in the ongoing documentati
 
 Proof-of-concept prototype can be accessed and deployed by following this link: https://anisa9.github.io. Make sure to use Chrome so the voice recognition function works.
 
-The code of the prototype can be found in the repository folder here. Optionally, the prototype can be accessed by downloading this folder and running the index.html file in Chrome (for the voice-recognition to function).
+The code of the prototype can be found in the repository folder [here](https://github.com/anisa9/foodwaste-project/tree/master/Proof%20of%20Concept%20Prototype/FridgePrint) (Proof of Concept Prototype > FridgePrint). Optionally, the prototype can be accessed by downloading this folder and running the index.html file in Chrome (for the voice-recognition to function).
 
 For guidance on the interactions FridgePrint provides, the [use and interaction guide](https://github.com/anisa9/foodwaste-project/blob/master/Promotional%20Materials/interaction%20and%20use%20guide.png) can be referenced, or optionally the [task flows](https://github.com/anisa9/foodwaste-project/blob/master/Proof%20of%20Concept%20Prototype/prototype%20task%20flows.png) that outline the key paths and interactions of FridgePrint.
 
