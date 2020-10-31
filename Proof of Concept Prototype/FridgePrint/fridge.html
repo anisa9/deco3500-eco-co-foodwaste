@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+<body>
+    <header class="fridge-header">  
+      <button class="add-btn">&#43;</button>
+      <h2> Fridge <i class="fa fa-info-circle key-info"></i></h2>
+   </header>
+
+  
+
+<div class="keyModal">
+  <span class="closeBtn">&times;</span>                        
+  <h2> Fridge Legend</h2>
+  <h3> Expiry Colours:</h3>
+    <p> <b>Red: </b> expiring in 1-2 days.</p>
+    <p> <b>Orange: </b> expiring in less than 7 days.</p>
+    <p> <b>Green: </b> expiring in 7 days +</p> 
+<br>
+    <h3>Food Image Shape</h3>
+    <p> <b>Square: </b>Item on watchlist.</p>
+    <p> <b>circle: </b> Other items.</p>
+
+   </div>
+    <main class="fridge-items">
+      
+      <div class="notification"></div>
+      <div class="notification-comment">
+        <p class="alert-time"> now</p>
+        <i class="fas fa-comment-medical alert-icon"></i> 
+        <p class="alert-note"></p>
+      </div>
+
+      <div class="notification-jane">   
+        <p class="alert-time"> now</p>
+        <p class="alert-note"> <i class="fas fa-comment-medical"></i> Jane commented on the Cream: "Can I use some for my cake Sarah?" </p>
+      </div>
+
+      <!-- audio source: https://www.dreamstime.com/stock-music-sound-effect/ -->
+      <audio  class="notify-audio">
+        <source src="media/alert-sound.mp3" type="audio/mpeg">
+      </audio>
+
+          <section class="dairy-category">
+              <p>Dairy</p>
+
+              <div class="grid-container grid">
+                <div class="item-container" id="milk">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div>
+                   <img class="red" src="media/Milk.png" alt="milk">
+                    <button class="item-btn milk-detail-btn"> </button>
+                    <p> Milk</p>
+                </div>
+
+                <div class="item-container" id="cream">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div>
+                   <img class="orange" src="media/sour cream.png" alt="cream">
+                    <button class="item-btn cream-detail-btn"> </button>
+                    <p> Cream</p>
+                </div>
+
+                <div class="item-container" id="cheese">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div>
+                  <img class="green" src="media/Cheese.png" alt="cheese">
+                    <button class="item-btn cheese-detail-btn"> </button>
+                    <p> Cheese</p>
+                   
+                </div>
+                
+                <div class="item-container" id="butter">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div>
+                  <img class="green"  src="media/butter.png" alt="butter">
+                    <button class="item-btn butter-detail-btn"> </button>
+                    <p> Butter</p>                
+                </div>
+            </div>
+
+          </section>
+  
+          <section class="meat-category">
+            <p>Meat</p>
+
+            <div class="grid-container grid">
+              <div class="item-container" id="chicken">
+                <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                  <span class="fridge-dot jane-own-dot-fridge"></span>
+                  <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                </div>
+                <img class="orange" src="media/Thanksgiving.png" alt="chicken">
+                  <button class="item-btn chicken-detail-btn"> </button>
+                  <p> Chicken</p>
+                
+              </div>
+
+              <div class="item-container" id="tofu">
+                <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                  <span class="fridge-dot jane-own-dot-fridge"></span>
+                  <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                </div> <img class="orange" src="media/Fish Food.png" alt="spinach">
+                  <button class="item-btn tofu-detail-btn"> </button>
+                  <p> Fish</p>
+                
+              </div>
+
+              <div class="item-container" id="salami">
+                <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                  <span class="fridge-dot jane-own-dot-fridge"></span>
+                  <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                </div> <img class="green" src="media/turkey slices.png" alt="spinach">
+                  <button class="item-btn salami-detail-btn"> </button>
+                  <p> Salami</p>
+                  
+              </div>
+
+          </div>
+        </section>
+
+
+        <section class="leftovers-category">
+            <p>Leftovers</p>
+
+        <div class="grid-container grid">
+          <div class="item-container" id="potato-salad">
+            <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+              <span class="fridge-dot jane-own-dot-fridge"></span>
+              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+            </div> <img class="red" src="media/Vegan Food.png" alt="spinach">
+              <button class="item-btn potato-salad-detail-btn"> </button>
+              <p> Potato Salad</p>
+             
+          </div>
+            <div class="item-container" id="ubereats-burger">
+              <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                <span class="fridge-dot jane-own-dot-fridge"></span>
+                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+              </div>
+               <img class="orange" src="media/Hamburger.png" alt="spinach">
+                <button class="item-btn ubereats-burger-detail-btn"> </button>
+                <p> UberEats Burger</p>
+           
+            </div>
+      </div>
+    </section>
+
+        <section class="fruit-category">
+              <p>Fruit</p>
+
+          <div class="grid-container grid">
+            <div class="item-container " id="apple">
+              <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                <span class="fridge-dot jane-own-dot-fridge"></span>
+                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+              </div> <img class="orange" src="media/Apple.png" alt="spinach">
+                <button class="item-btn apple-detail-btn"> </button>
+                <p> Apple</p>
+                
+            </div>
+
+            <div class="item-container" id="mango">
+              <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                <span class="fridge-dot jane-own-dot-fridge"></span>
+                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+              </div> <img class="green" src="media/Plum.png" alt="spinach">
+                <button class="item-btn mango-detail-btn"> </button>
+                <p> Plum</p>
+
+            </div>
+
+            <div class="item-container" id="kiwi">
+              <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                <span class="fridge-dot jane-own-dot-fridge"></span>
+                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+              </div> <img class="green" src="media/Kiwi.png" alt="spinach">
+                <button class="item-btn kiwi-detail-btn"> </button>
+                <p> Kiwi</p>
+        
+            </div>
+        
+        </div>
+      </section>
+
+          <section class="vegies-category">
+              <p>Vegies</p>
+              <div class="grid-container grid">
+                <div class="item-container" id="spinach">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div> <img class="red" src="media/Natural Food.png" alt="spinach">
+                    <button class="item-btn spinach-detail-btn"> </button>
+                    <p> Spinach</p>
+                    
+                </div>
+
+                <div class="item-container" id="carrot">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div><img class="red" src="media/Carrot.png" alt="spinach">
+                    <button class="item-btn carrot-detail-btn"> </button>
+                    <p> Carrot</p>
+                   
+                </div>
+
+                <div class="item-container" id="tomato">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div> <img class="green" src="media/Tomato.png" alt="spinach">
+                    <button class="item-btn tomato-detail-btn"> </button>
+                    <p> Tomato</p>
+                  
+                </div>
+                
+                <div class="item-container" id="broccoli">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div> <img class="green"  src="media/Broccoli.png" alt="spinach">
+                    <button class="item-btn broccoli-detail-btn"> </button>
+                    <p> Broccoli</p>
+                   
+                </div>
+
+                <div class="item-container" id="lettuce">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div><img class="green"  src="media/Lettuce.png" alt="spinach">
+                  <button class="item-btn lettuce-detail-btn"> </button>
+                  <p> Lettuce</p>
+                 
+              </div>
+            </div>
+          </section>
+
+          <section class="other-category">
+              <p>Other</p>
+              <div class="grid-container grid">
+                <div class="item-container" id="orange-juice">
+                  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                    <span class="fridge-dot jane-own-dot-fridge"></span>
+                    <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                  </div><img class="orange" src="media/orange juice.png" alt="spinach">
+                    <button class="item-btn orange-juice-detail-btn"> </button>
+                    <p> Orange Juice</p>
+                  
+                </div>
+
+            </div>
+          </section>
+
+     </main>
+
+        <nav class="footer-menu">        
+            <a href="index.html">Home </a>
+            <a class="active-footer fridge-btn"  href="fridge.html">Fridge </a>
+            <a class="foodprint-btn">Footprint </a>
+        </nav>
+
+        <!-- Add items modal  -->
+        <div id="add-modal" class="modal">
+          <div class="modal-info">
+            <div class="modal-header">
+                  <span class="closeBtn">&#8249;</span>
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <h2>Select Items to Add to the Fridge</h2>
+               </div>
+                <div class="modal-body" id="recently-added-items">
+                  <h3> <em>Recently Added Items</em> </h3>
+                      <div class="dairy-category">
+                          <p>Dairy</p>     
+                          <div class="grid-container2 grid">                    
+                            <div class="item-container item dairyItems" id="yoghurt">
+                              <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                                <span class="fridge-dot jane-own-dot-fridge"></span>
+                                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                              </div><img  src="media/yoghurt.png" alt="yoghurt">
+                              <p> Yoghurt</p></div>
+                          
+                            </div>
+            
+                            <div class="item-container item dairyItems" id="sour-cream">
+                              <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                                <span class="fridge-dot jane-own-dot-fridge"></span>
+                                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                              </div>
+                              <img  src="media/sour cream.png" alt="sour cream">
+                                <p> Sour Cream</p>
+                               
+                              </div>
+                            </div>
+                            
+                            <div class="item-container item dairyItems" id="fetta">
+                              <div><div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                                <span class="fridge-dot jane-own-dot-fridge"></span>
+                                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                              </div> <img  src="media/Cheese.png" alt="fetta">
+                                <p> Fetta</p>
+                              
+                              </div>
+                            </div>
+                               
+                            </div>
+                        </div>
+
+                         <hr>
+                                   
+                      <div class="meat-category">
+                        <p>Meat</p>
+            
+                        <div class="grid-container2 grid">
+                          
+                          <div class="item-container item meatItems "id="pork">
+                            <div><div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                              <span class="fridge-dot jane-own-dot-fridge"></span>
+                              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                            </div><img  src="media/Steak.png" alt="fetta">
+                              <p> Beef </p>
+                             
+                            </div>
+                          </div>
+                          
+                          <div class="item-container item meatItems" id="ham">
+                            <div><div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                              <span class="fridge-dot jane-own-dot-fridge"></span>
+                              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                            </div><img  src="media/Bacon.png" alt="fetta">
+                              <p> Ham</p>
+                        
+                            </div>
+                          </div>
+
+                          <div class="item-container item meatItems" id="turkey">
+                            <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                              <span class="fridge-dot jane-own-dot-fridge"></span>
+                              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                            </div><img  src="media/turkey slices.png" alt="fetta">
+                              <p> Turkey slices</p>
+                             
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+            <hr>
+            
+                    <div class="leftovers-category">
+                        <p>Leftovers</p>
+            
+                    <div class="grid-container2 grid">
+
+                        <div class="item-container item leftoverItems" id="rice-noodles">
+                        <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                          <span class="fridge-dot jane-own-dot-fridge"></span>
+                          <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                        </div><img  src="media/Noodles.png" alt="fetta">
+                          <p> Rice Noodles</p>
+                          
+                        </div>  
+                        </div>   
+
+                        <div class="item-container leftoverItems">
+                          <div>
+                          <button class="add-leftover-btn"> Add Leftovers </button>                         
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="fruit-category">
+                          <p>Fruit</p>
+            
+                      <div class="grid-container2 grid">
+                        <div class="item-container item fruitItems" id="banana">
+                         <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                          <span class="fridge-dot jane-own-dot-fridge"></span>
+                          <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                        </div> <img  src="media/Banana.png" alt="fetta">
+                          <p> Banana</p>
+                         
+                        </div>
+                        </div>
+                        
+                        <div class="item-container item fruitItems" id="blueberry">
+                          <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                            <span class="fridge-dot jane-own-dot-fridge"></span>
+                            <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                          </div><img  src="media/Strawberry.png" alt="fetta">
+                            <p> Strawberries</p>
+                         
+                          </div>
+                        </div>
+
+                        <div class="item-container item fruitItems" id="pear">
+                         <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                          <span class="fridge-dot jane-own-dot-fridge"></span>
+                          <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                        </div>
+                        <img  src="media/Pear.png" alt="fetta">
+                          <p> Pear</p>
+                      
+                        </div>
+                       
+                        </div>
+
+                        <div class="item-container item fruitItems" id="orange">
+                        <div>  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                          <span class="fridge-dot jane-own-dot-fridge"></span>
+                          <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                        </div> <img  src="media/Lemon.png" alt="fetta">
+                          <p> Orange</p>
+                        
+                        </div>
+                        </div>
+
+                        
+                    
+                    </div>
+                  </div>
+                  <hr>
+                      <div class="vegies-category">
+                          <p>Vegies</p>
+                          <div class="grid-container2 grid">
+                            <div class="item-container item vegieItems" id="zucchini">
+                             <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                              <span class="fridge-dot jane-own-dot-fridge"></span>
+                              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                            </div> <img  src="media/Leek.png" alt="fetta">
+                              <p> Leek</p>
+                          
+                            </div>
+                            </div>
+                            
+                            <div class="item-container item vegieItems" id="squash">
+                              <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                                <span class="fridge-dot jane-own-dot-fridge"></span>
+                                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                              </div><img  src="media/Beet.png" alt="fetta">
+                                <p> Beetroot</p>
+                             
+                              </div>
+                            </div>
+  
+                            <div class="item-container item vegieItems" id="buk-choy">
+                             <div>  <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                              <span class="fridge-dot jane-own-dot-fridge"></span>
+                              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                            </div><img  src="media/Eggplant.png" alt="fetta">
+                              <p> Eggplant</p>
+                             
+                            </div>
+                            </div>
+  
+                            <div class="item-container item vegieItems" id="turnip">
+                              <div><div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                                <span class="fridge-dot jane-own-dot-fridge"></span>
+                                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                              </div> <img  src="media/Cabbage.png" alt="fetta">
+                                <p> Cabbage</p>
+                             
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <section class="other-category">
+                          <p>Other</p>
+                          <div class="grid-container2 grid">
+                            <div class="item-container item otherItems" id="cranberry-juice">
+                              <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                                <span class="fridge-dot jane-own-dot-fridge"></span>
+                                <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                              </div><img  src="media/juice.png" alt="fetta">
+                                <p> Cranberry Juice</p>
+                         
+                              </div>
+                            </div>
+                            
+                            <div class="item-container item otherItems" id="mayo">
+                             <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+                              <span class="fridge-dot jane-own-dot-fridge"></span>
+                              <span class=" fridge-dot bob-own-dot-fridge"></span> 
+                            </div><img  src="media/Sauce.png" alt="fetta">
+                              <p> BBQ Sauce</p>
+                             
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                 <div class="modal-footer">
+                      <div class="add-to-basket">
+                          <p>Add</p>
+                          <!-- <p id="items-basket"></p> -->
+                      </div>
+                   </div>
+            </div>
+         </div>
+   
+   
+   <!-- leftover modal -->
+         <div id="leftoverModal" class="modal">
+          <div class="modal-info">
+            <div class="modal-header">
+               <span class="closeBtn">&#8249;</span>
+               <h2>Add Leftover</h2>
+            </div>
+            <div class="modal-body" >
+              <div>
+              <p> Name: </p>
+              <input type="text"  class="leftover-input" placeholder="Leftover" >
+      </div>
+       
+            </div>
+            <div class="leftover-footer">
+              <button type="submit" class="add-leftover"> Add </button>
+            </div>
+          </div>
+        </div>
+
+<!-- leftover items add -->
+        <div class="item-container item leftoverItems chicken-noodles" id="chicken-noodles">
+          <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+            <span class="fridge-dot jane-own-dot-fridge"></span>
+            <span class=" fridge-dot bob-own-dot-fridge"></span> 
+          </div><img  src="media/Noodles.png" alt="noodles">
+            <p> Chicken Noodles</p>
+       
+          </div>
+        </div>
+        <div class="item-container item leftoverItems taco" id="taco">
+          <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+            <span class="fridge-dot jane-own-dot-fridge"></span>
+            <span class=" fridge-dot bob-own-dot-fridge"></span> 
+          </div><img  src="media/Taco.png" alt="noodles">
+            <p> Taco</p>
+      
+          </div>
+        </div>
+        <div class="item-container item  leftoverItems cake" id="cake">
+          <div> <div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+            <span class="fridge-dot jane-own-dot-fridge"></span>
+            <span class=" fridge-dot bob-own-dot-fridge"></span> 
+          </div><img  src="media/Birthday Cake.png" alt="noodles">
+            <p> Cake</p>
+     
+          </div>
+        </div>
+        <div class="item-container item leftoverItems stir-fry" id="stir-fry">
+          <div><div><span class=" fridge-dot sarah-own-dot-fridge"></span>
+            <span class="fridge-dot jane-own-dot-fridge"></span>
+            <span class=" fridge-dot bob-own-dot-fridge"></span> 
+          </div> <img  src="media/Noodles.png" alt="noodles">
+            <p> Stir Fry</p>
+           
+          </div>
+        </div>
+       
+           <!-- expiry modal  -->
+
+<div id="expiryModal" class="modal">
+  <div class="modal-info">
+    <div class="modal-header">
+       <span class="closeBtn">&#8249;</span>
+       <h2>Add Expiry</h2>
+    </div>
+    <div class="modal-body expiry-container" >
+      <button class='remove'> Remove All Items </button>
+
+     <div class= "manual-expiry-container">
+     
+      <p class="expiry-title"> Add Expiry Date <i class="fa fa-info-circle manual-info"></i></p>
+      <div class="manual-expiry">
+        </div>
+     </div> 
+      <hr>
+      <div class="auto-expiry-container">
+        <p class="expiry-title"> Expiry Auto-Added        <i class="fa fa-info-circle auto-info"></i>
+        </p>
+        <div class="auto-expiry">
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button id="expiry-next-btn"> Next</button>
+    </div>
+  </div>
+
+<!-- voice inputs  -->
+
+<div class="voice-container sour-cream-voice-container"> 
+  <div>
+   <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="sour-cream-text" class="voice-text" placeholder="Enter expiry"/>
+    <button id="sour-cream-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+  
+</div>
+
+<div class="voice-container yoghurt-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="yoghurt-text" class="voice-text" placeholder="Enter expiry"/>
+  <button id="yoghurt-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container fetta-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="fetta-text" class="voice-text" placeholder="Enter expiry"/>
+  <button id="fetta-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container pork-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="pork-text" class="voice-text" placeholder="Enter expiry"/>
+  <button id="pork-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container ham-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+     <input type="text"  id="ham-text" class="voice-text" placeholder="Enter expiry"/>
+  <button id="ham-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container turkey-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="turkey-text" class="voice-text" placeholder="Enter expiry"/>
+  <button id="turkey-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container rice-noodles-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+     <input type="text"  id="rice-noodles-text" class="voice-text" placeholder="Enter expiry"/>
+  <button id="rice-noodles-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container banana-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="banana-text" class="voice-text" placeholder="7 days"/>
+  <button id="banana-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container blueberry-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="blueberry-text" class="voice-text" placeholder="4 days"/>
+  <button id="blueberry-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+
+</div>
+
+<div class="voice-container pear-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="pear-text" class="voice-text" placeholder="10 days "/>
+  <button id="pear-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container orange-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="orange-text" class="voice-text" placeholder="14 days"/>
+  <button id="orange-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container zucchini-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="zucchini-text" class="voice-text" placeholder="10 days"/>
+  <button id="zucchini-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container squash-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="squash-text" class="voice-text" placeholder="10 days"/>
+  <button id="squash-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container buk-choy-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+     <input type="text"  id="buk-choy-text" class="voice-text" placeholder="8 days"/>
+  <button id="buk-choy-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container turnip-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="zucchini-text" class="voice-text" placeholder="20 days"/>
+  <button id="turnip-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container cranberry-juice-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+     <input type="text"  id="zucchini-text" class="voice-text" placeholder="8 months"/>
+  <button id="cranberry-juice-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container mayo-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+     <input type="text"  id="mayo-text" class="voice-text" placeholder="3 months"/>
+  <button id="mayo-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+
+<div class="voice-container chicken-noodles-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+     <input type="text"  id="chicken-noodles-text" class="voice-text" placeholder="4 days"/>
+  <button id="chicken-noodles-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container cake-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="cake-text" class="voice-text" placeholder="4 days"/>
+  <button id="cake-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container taco-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="taco-text" class="voice-text" placeholder="4 days"/>
+  <button id="taco-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+
+<div class="voice-container stir-fry-voice-container"> 
+  <div>
+    <p class="expiry-label"> Expiry: </p>
+    <input type="text"  id="stir-fry-text" class="voice-text" placeholder="4 days"/>
+  <button id="stir-fry-voice" class="voice-btn"><i  class="fa fa-microphone"></i> </button>
+  </div>
+</div>
+</div>    
+
+ <!-- auto expiry info modal -->
+ <div id="autoExpiryInfoModal" class="modal">
+      <div class="expiry-info-modal-info">
+          <p>Expiry for fruits, vegetables and leftovers are pre-generated. You can edit the expiry if desired.</p>
+      
+    </div>
+</div>
+
+
+ <!-- manual expiry info modal -->
+ <div id="manualExpiryInfoModal" class="modal">
+  <div class="expiry-info-modal-info">
+      <p>Expiry for dairy, meat and other items needs to be inputted either manually or by voice to edit the precomputed expiry.</p>
+  
+</div>
+</div>
+
+     <!-- Basket modal  -->
+               <div id="basketModal" class="modal">
+                  <div class="modal-info">
+                    <div class="modal-header">
+                       <span class="closeBtn">&#8249;</span>
+                       <h2>Mark the Items with Ownership Tags</h2>
+                       <div class="user-container">
+                          <p> Select User: </p>
+                        <div>
+                          <input type="radio" name="user" id="SarahUser"><label>Sarah    </label>
+                          <input type="radio" name="user" id="JaneUser"><label>Jane    </label>
+                          <input type="radio" name="user" id="BobUser"><label>Bob   </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-body" >
+                        <ol id="list-item">
+                        </ol>
+               
+                    </div>
+                    <div class="modal-footer">
+                      <button id="add-to-fridge-btn"> Add to Fridge</button>
+                    </div>
+                  </div>
+                </div>
+         
+
+ <!-- --------------item detail modals ------------ -->
+
+ <!-- DAIRY -->
+
+ <!-- milk -->
+
+ <div id="milkModal" class="itemModal">
+    <div class="item-modal-info">
+      <div class="item-modal-header">
+          <span class="closeBtn">&times;</span>
+          <div>
+            <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+            <span class="dot sarah-own-dot"></span>
+            <span class="dot jane-own-dot"></span>
+            <span class="dot bob-own-dot"></span>
+            <div> <img class="item-detail-img red" src="media/Milk.png" alt="spinach">
+              <h1>Milk</h1></div>
+
+          </div>
+        </div>
+        <div class="item-modal-body">
+            <div class="expiry-date-container">
+              <p>Expires:         </p>
+              <p id="milk-expiry"> in 2 days</p>
+            </div>
+            <div class="notepad">
+              <p>Comments</p>            
+              <div class="chat-section">
+                  <div class="chat-box">
+                              <div class="commment-container">
+                                  <div class=" housemate-icon"> 
+                                      <img src="media/jane_icon-01.png">
+                                  </div>                      
+                                  <div class="comment-box">
+                                      <div class="comment-header">
+                                          <div class="comment-name">Jane</div>
+                                          <div class="comment-time">11:39</div>
+                                      </div>                              
+                                      <div class="comment-body">
+                                          I might use some of this today for a smoothie.
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>  
+                  <!-- comment input field -->
+                  <form class="comment-field">
+                      <div> 
+                          <input type="radio" name="user" id="SarahBtn"><label>Sarah</label>
+                          <input type="radio" name="user" id="JaneBtn"><label>Jane</label>
+                          <input type="radio" name="user" id="BobBtn"><label>Bob</label>
+                      </div>
+                      <input type="text"  class="comment-input" placeholder="Message" >
+                      <button type="submit" class="comment-send-btn">Send</button> 
+                  </form>
+              </div>
+            </div>
+            <div class="item-btns-container">
+              <div>
+              <button class="open-item-btn" disabled> Open</button>
+              <button class="eat-all-btn"> Eat All</button>
+              <button class="eat-some-btn"> Eat Some</button>
+              <button class="throw-btn"> Throw</button>
+              </div>
+            </div>
+        </div>
+    </div>
+<!-- ownership modal -->
+    <div class="ownership-modal">
+      <div class="ownership-modal-content">
+        <span class="closeBtn">&times;</span>
+        <div class=" housemate-icon sarah-icon"> 
+          <img src="media/sarah_icon-01.png">
+        </div> 
+        <div class=" housemate-icon jane-icon"> 
+          <img src="media/jane_icon-01.png">
+        </div> 
+        <div class=" housemate-icon bob-icon"> 
+          <img src="media/bob_icon-01.png">
+        </div> 
+        </div>
+    </div>
+ </div>
+
+
+
+<!-- cream -->
+
+<div id="creamModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i></button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+          <div>           <img class="item-detail-img orange" src="media/sour cream.png" alt="cream">       
+             <h1>Cream</h1>
+
+          </div>
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="cream-expiry"> in 3 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box2">
+                            <div class="commment-container">
+                                <div class=" housemate-icon"> 
+                                    <img src="media/jane_icon-01.png">
+                                </div>                      
+                                <div class="comment-box">
+                                    <div class="comment-header">
+                                        <div class="comment-name">Jane</div>
+                                        <div class="comment-time">11:39</div>
+                                    </div>                              
+                                    <div class="comment-body">
+                                        Can I use some for a cake I'm baking, Sarah ?
+                                    </div>
+                                </div>
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field2">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn2"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn2"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn2"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input2" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn"disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+ 
+<!-- cheese -->
+
+<div id="cheeseModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+        <div><img class="item-detail-img green" src="media/Cheese.png" alt="cheese"><h1>Cheese</h1></div>          
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="cheese-expiry"> in 20 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box3">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field3">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn3"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn3"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn3"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input3" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn"> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+
+ 
+<!-- butter -->
+
+<div id="butterModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+          <div> <img class="item-detail-img green" src="media/butter.png" alt="butter">        <h1>Butter</h1>
+          </div>
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="butter-expiry"> in 40 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box4">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field4">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn4"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn4"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn4"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input4" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn"> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+<!-- chicken -->
+
+<div id="chickenModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div> <img class="item-detail-img orange" src="media/Thanksgiving.png" alt="chicken">      <h1>Chicken</h1></div> 
+        </div>
+  
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="chicken-expiry"> in 6 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box5">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field5">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn5"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn5"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn5"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input5" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- tofu -->
+
+<div id="tofuModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+        <div><img class="item-detail-img orange" src="media/Fish Food.png" alt="tofu"> <h1>Fish</h1></div>  
+        </div>
+       
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="tofu-expiry"> in 8 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box6">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field6">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn6"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn6"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn6"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input6" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" > Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+<!-- salami -->
+
+<div id="salamiModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+          <div><img class="item-detail-img green" src="media/turkey slices.png" alt="salami">        <h1>Salami</h1></div>
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="salami-expiry"> in 30 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box7">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field7">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn7"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn7"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn7"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input7" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" > Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+<!-- potatosalad -->
+
+<div id="potatosaladModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div><img class="item-detail-img red" src="media/Vegan Food.png" alt="potatosalad">        <h1>Potato Salad</h1>
+         </div> 
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="potato-sald-expiry"> in 2 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box8">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field8">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn8"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn8"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn8"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input8" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+<!-- ubereats burger -->
+
+<div id="ubereatsModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+          <div><img class="item-detail-img orange" src="media/Hamburger.png" alt="ubereats">        <h1>UberEats Burger</h1>
+          </div>
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="ubereats-expiry"> in 4 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box9">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field9">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn9"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn9"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn9"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input9" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- apple -->
+
+<div id="appleModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+       <div> <img class="item-detail-img orange" src="media/Apple.png" alt="apple">        <h1>Apple</h1></div>  
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="apple-expiry"> in 6 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box10">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field10">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn10"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn10"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn10"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input10" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- mango -->
+
+<div id="mangoModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div><img class="item-detail-img green" src="media/Plum.png" alt="chimangocken">        <h1>Plum</h1>
+         </div> 
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="mango-expiry"> in 8 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box11">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field11">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn11"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn11"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn11"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input11" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- kiwi -->
+
+<div id="kiwiModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div><img class="item-detail-img green" src="media/Kiwi.png" alt="kiwi">        <h1>Kiwi</h1></div> 
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="kiwi-expiry"> in 9 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box12">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field12">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn12"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn12"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn12"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input12" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- spinach -->
+
+<div id="spinachModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+          <div><img class="item-detail-img red" src="media/Natural Food.png" alt="spinach">        <h1>Spinach</h1></div>
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="spinach-expiry"> in 6 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box13">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field13">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn13"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn13"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn13"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input13" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- carrot -->
+
+<div id="carrotModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+        <div><img class="item-detail-img red" src="media/Carrot.png" alt="carrot">        <h1>Carrot</h1>
+        </div>  
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="carrot-expiry"> in 2 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box14">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field14">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn14"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn14"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn14"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input14" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- tomato -->
+
+<div id="tomatoModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div><img class="item-detail-img green" src="media/Tomato.png" alt="tomato">        <h1>Tomato</h1></div> 
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="tomato-expiry"> in 10 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box15">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field15">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn15"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn15"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn15"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input15" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+<!-- broccoli -->
+
+<div id="broccoliModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+       <div><img class="item-detail-img green" src="media/Broccoli.png" alt="broccoli">        <h1>Broccoli</h1>
+       </div>   
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="broccoli-expiry"> in 11 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box16">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field16">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn16"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn16"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn16"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input16" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- lettuce -->
+
+<div id="lettuceModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i>	</button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div><img class="item-detail-img green" src="media/Lettuce.png" alt="lettuce">        <h1>Lettuce</h1></div> 
+
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="lettuce-expiry"> in 12 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box17">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field17">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn17"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn17"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn17"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input17" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+<!-- orange juice -->
+
+<div id="orangejuiceModal" class="itemModal">
+  <div class="item-modal-info">
+    <div class="item-modal-header">
+        <span class="closeBtn">&times;</span>
+        <div>
+          <button class="add-ownership-btn"><i class="fas fa-user-plus"></i></button>
+          <span class="dot sarah-own-dot"></span>
+          <span class="dot jane-own-dot"></span>
+          <span class="dot bob-own-dot"></span>
+         <div> <img class="item-detail-img orange" src="media/orange juice.png" alt="orangejuice">        <h1>Orange Juice</h1>
+         </div>
+        </div>
+      </div>
+      <div class="item-modal-body">
+          <div class="expiry-date-container">
+            <p>Expires:         </p>
+            <p id="orange-juice-expiry"> in 4 days</p>
+          </div>
+          <div class="notepad">
+            <p>Comments</p>            
+            <div class="chat-section">
+                <div class="chat-box18">
+                            <div class="commment-container">      
+                            </div>
+                    </div>  
+                <!-- comment input field -->
+                <form class="comment-field18">
+                    <div> 
+                        <input type="radio" name="user" id="SarahBtn18"><label>Sarah</label>
+                        <input type="radio" name="user" id="JaneBtn18"><label>Jane</label>
+                        <input type="radio" name="user" id="BobBtn18"><label>Bob</label>
+                    </div>
+                    <input type="text"  class="comment-input18" placeholder="Message" >
+                    <button type="submit" class="comment-send-btn">Send</button> 
+                </form>
+            </div>
+          </div>
+          <div class="item-btns-container">
+            <div>
+            <button class="open-item-btn" disabled> Open</button>
+            <button class="eat-all-btn"> Eat All</button>
+            <button class="eat-some-btn"> Eat Some</button>
+            <button class="throw-btn"> Throw</button>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- ownership modal -->
+  <div class="ownership-modal">
+    <div class="ownership-modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class=" housemate-icon sarah-icon"> 
+        <img src="media/sarah_icon-01.png">
+      </div> 
+      <div class=" housemate-icon jane-icon"> 
+        <img src="media/jane_icon-01.png">
+      </div> 
+      <div class=" housemate-icon bob-icon"> 
+        <img src="media/bob_icon-01.png">
+      </div> 
+      </div>
+  </div>
+</div>
+
+
+
+
+
+ <!-- foodprint modal  -->
+ <div id="foodprintModal" class="modal">
+  <div class="modal-info"> 
+    <div class="modal-header">
+       <span class="closeBtn">&#8249;</span>
+       <h2> Household Foodprint</h2>
+      </div>
+
+    <div class="modal-body" >      
+    <main class="foodprint-container">       
+<h3> How did you all go this month?</h3>            
+<div class="foodprint-messages">
+<div class="last-month">
+<h2> Last Month's Outcome</h2>
+<p> Well done!! You all consumed the 90% of the items on the watchlist!!</p>
+
+</div>
+<div class="next-month">
+<h2> This Month's Goal</h2>
+<p> Focus on using up vegetables. Dont' forget to use them in time. Check your watchlist.</p>
+</div>
+</div>
+
+ <div class="most-wasted-stats">
+    <h2> Foods Waste (Thrown) This Month</h2>
+    <br>
+    <div class="jane-stats">
+        <img src="media/jane_icon-01.png">
+    </div>
+<br>
+    <div class="bob-stats">
+        <img src="media/bob-2-01.png">   
+    </div>
+    <br>
+    <div class="sarah-stats">
+        <img src="media/sarah_icon-01.png">
+    </div>
+    <br>
+    <div class="household-stats">
+        <section> <img src="media/house.png">
+            <p> Overall </p>
+        <p>Household</p></section>
+    </div>
+ </div>
+    </main> 
+    </div>
+  </div>
+</div>
+
+
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src ="script.js"></script>
+        <script src ="script2.js"></script>
+
+</body>
+</html>
