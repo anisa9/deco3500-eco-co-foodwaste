@@ -12,7 +12,7 @@ Links for the prototypes developed can be accessed on in the ongoing documentati
 
 #### Proof-of-Concept Prototype
 
-Proof-of-concept prototype can be accessed and deployed by following this link: https://anisa9.github.io
+Proof-of-concept prototype can be accessed and deployed by following this link: https://anisa9.github.io. Make sure to use Chrome so the voice recognition function works.
 
 The code of the prototype can be found in the repository folder here. Optionally, the prototype can be accessed by downloading this folder and running the index.html file in Chrome (for the voice-recognition to function).
 
