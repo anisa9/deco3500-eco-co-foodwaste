@@ -1,4 +1,4 @@
-# DECO3500 - Group Eco-co 
+# DECO3500 (Group Eco-co)
 ## Anisa Rowhani 
 
 #### [Design Process Overview](https://github.com/anisa9/foodwaste-project/wiki/Design-Process-Overview)
