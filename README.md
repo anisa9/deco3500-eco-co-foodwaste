@@ -8,7 +8,7 @@
 
 Contains details of FridgePrint’s design and development including design decisions, research, prototypes and evaluations conducted.   
 
-Links for the prototypes developed can be accessed on in the ongoing documentation link above. Additionally, for reference, embedded here are the links for the [low-fidelity prototype](https://www.figma.com/proto/oo8ywaH1suHtHRZZja6lxm/DECO3500--Paper-Prototype-2?node-id=1%3A41&scaling=min-zoom) and [medium-fidelity prototype](https://www.figma.com/proto/5EoM6Qwk3NjoFgA3OEOHg3/DECO3500---Medium-Fidelity-Prototype?node-id=1%3A18&scaling=scale-down).
+Links for the prototypes developed can be accessed from the ongoing documentation link above. Additionally, for reference, embedded here are the links for the [low-fidelity prototype](https://www.figma.com/proto/oo8ywaH1suHtHRZZja6lxm/DECO3500--Paper-Prototype-2?node-id=1%3A41&scaling=min-zoom) and [medium-fidelity prototype](https://www.figma.com/proto/5EoM6Qwk3NjoFgA3OEOHg3/DECO3500---Medium-Fidelity-Prototype?node-id=1%3A18&scaling=scale-down).
 
 #### Proof-of-Concept Prototype
 
